@@ -47,11 +47,11 @@ ITEC102-Final-Project/
 ├── Psuedocode/
 │   └── Psuedocode.pdf
 ├── screenshots/
-│   ├── screenshot1.png
-│   ├── screenshot2.png
-│   ├── screenshot3.png
-│   ├── screenshot4.png
-│   └── screenshot5.png
+│   ├── Screenshot1.png
+│   ├── Screenshot2.png
+│   ├── Screenshot3.png
+│   ├── Screenshot4.png
+│   └── Screenshot5.png
 └── documentation/
     └── User-Manual.pdf
 ```
