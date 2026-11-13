@@ -44,8 +44,8 @@ ITEC102-Final-Project/
 │   └── Program.cs
 ├── flowcharts/
 │   └── Flowchart_TicTacToe_ITEC102_Final_Project.pdf
-├── Psuedocode/
-│   └── Psuedocode.pdf
+├── Pseudocode/
+│   └── Pseudocode.pdf
 ├── screenshots/
 │   ├── Screenshot1.png
 │   ├── Screenshot2.png
