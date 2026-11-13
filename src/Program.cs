@@ -10,13 +10,15 @@ class Program
         Console.WriteLine("╚═════════════════════════════════════════════════════════╝");
 
         Console.Write("\nPlayer 1 Name: ");
-        string n1 = Console.ReadLine();
+        string n1 = Console.ReadLine().Trim();
+        if (n1 == "") { n1 = "Player 1"; }
         if (n1.Length > 10) { n1 = n1.Substring(0, 10); }
 
         Console.Write("Player 2 Name: ");
-        string n2 = Console.ReadLine();
+        string n2 = Console.ReadLine().Trim();
+        if (n2 == "") { n2 = "Player 2"; }
         if (n2.Length > 10) { n2 = n2.Substring(0, 10); }
-
+        
         char s1 = '1', s2 = '2', s3 = '3';
         char s4 = '4', s5 = '5', s6 = '6';
         char s7 = '7', s8 = '8', s9 = '9';
