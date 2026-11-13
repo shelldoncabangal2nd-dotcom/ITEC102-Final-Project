@@ -56,7 +56,7 @@ ITEC102-Final-Project/
     └── User-Manual.pdf
 ```
 
-## How to Run the Code
+## How to Run the Code 
 1. Open the source file located at `src/Program.cs`.
 2. Copy the code into **OnlineGDB** ([onlinegdb.com](https://onlinegdb.com)) with the language set to **C#**, or open it in **Visual Studio** / **.NET CLI**.
 3. Click **Run** (or run `dotnet run` in your terminal).
