@@ -104,7 +104,7 @@ class Program
             if (currentMark == 'X') { scoreA++; } else { scoreB++; }
             gameOver = true;
             DrawBoard();
-            Console.WriteLine($"🎉 {currentName} WINS THIS ROUND! 🎉");
+            Console.WriteLine($"*** {currentName} WINS THIS ROUND! ***");
             Console.Write("Press any key to continue...");
             Console.ReadKey(true);
         }
@@ -112,7 +112,7 @@ class Program
         {
             gameOver = true;
             DrawBoard();
-            Console.WriteLine("🤝 It's a draw round! 🤝");
+            Console.WriteLine("=== It's a draw round! ===");
             Console.Write("Press any key to continue...");
             Console.ReadKey(true);
         }
