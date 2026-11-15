@@ -51,7 +51,8 @@ ITEC102-Final-Project/
 │   ├── Screenshot2.png
 │   ├── Screenshot3.png
 │   ├── Screenshot4.png
-│   └── Screenshot5.png
+│   ├── Screenshot5.png
+│   └── Screenshot6.png
 └── documentation/
     └── User-Manual.pdf
 ```
