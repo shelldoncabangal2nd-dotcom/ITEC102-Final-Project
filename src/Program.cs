@@ -15,38 +15,10 @@ class Program
         Console.WriteLine("║                    TIC TAC TOE PROJECT                  ║");
         Console.WriteLine("╚═════════════════════════════════════════════════════════╝");
 
-        Console.Write("\nPlayer 1 Name: ");
-        string input1 = Console.ReadLine();
-        if (input1 == null) { input1 = ""; }
-        n1 = "";
-        for (int i = 0; i < input1.Length; i++)
-        {
-            char c = input1[i];
-            if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || (c >= '0' && c <= '9') || c == ' ')
-            {
-                n1 = n1 + c;
-            }
-        }
-        n1 = n1.Trim();
-        if (n1 == "") { n1 = "Player 1"; }
-        if (n1.Length > 10) { n1 = n1.Substring(0, 10); }
-
-        Console.Write("Player 2 Name: ");
-        string input2 = Console.ReadLine();
-        if (input2 == null) { input2 = ""; }
-        n2 = "";
-        for (int i = 0; i < input2.Length; i++)
-        {
-            char c = input2[i];
-            if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || (c >= '0' && c <= '9') || c == ' ')
-            {
-                n2 = n2 + c;
-            }
-        }
-        n2 = n2.Trim();
-        if (n2 == "") { n2 = "Player 2"; }
-        if (n2.Length > 10) { n2 = n2.Substring(0, 10); }
-        
+        Console.WriteLine();
+        n1 = GetPlayerName("Player 1 Name: ", "Player 1");
+        n2 = GetPlayerName("Player 2 Name: ", "Player 2");
+      
         while (game == 1)
         {
             moves = 0;
@@ -69,7 +41,30 @@ class Program
             EndOrRestartMenu();
         }
     }
+    
+    static string GetPlayerName(string prompt, string defaultName)
+    {
+        Console.Write(prompt);
+        string input = Console.ReadLine();
+        if (input == null) { input = ""; }
 
+        string cleanName = "";
+        for (int i = 0; i < input.Length; i++)
+        {
+            char c = input[i];
+            if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || (c >= '0' && c <= '9') || c == ' ')
+            {
+                cleanName = cleanName + c;
+            }
+        }
+        
+        cleanName = cleanName.Trim();
+        if (cleanName == "") { cleanName = defaultName; }
+        if (cleanName.Length > 10) { cleanName = cleanName.Substring(0, 10); }
+        
+        return cleanName;
+    }
+  
     static void DrawBoard()
     {
         Console.Clear();
