@@ -16,19 +16,37 @@ class Program
         Console.WriteLine("╚═════════════════════════════════════════════════════════╝");
 
         Console.Write("\nPlayer 1 Name: ");
-        n1 = Console.ReadLine();
-        if (n1 == null) { n1 = ""; }
+        string input1 = Console.ReadLine();
+        if (input1 == null) { input1 = ""; }
+        n1 = "";
+        for (int i = 0; i < input1.Length; i++)
+        {
+            char c = input1[i];
+            if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || (c >= '0' && c <= '9') || c == ' ')
+            {
+                n1 = n1 + c;
+            }
+        }
         n1 = n1.Trim();
         if (n1 == "") { n1 = "Player 1"; }
         if (n1.Length > 10) { n1 = n1.Substring(0, 10); }
 
         Console.Write("Player 2 Name: ");
-        n2 = Console.ReadLine();
-        if (n2 == null) { n2 = ""; }
+        string input2 = Console.ReadLine();
+        if (input2 == null) { input2 = ""; }
+        n2 = "";
+        for (int i = 0; i < input2.Length; i++)
+        {
+            char c = input2[i];
+            if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || (c >= '0' && c <= '9') || c == ' ')
+            {
+                n2 = n2 + c;
+            }
+        }
         n2 = n2.Trim();
         if (n2 == "") { n2 = "Player 2"; }
         if (n2.Length > 10) { n2 = n2.Substring(0, 10); }
-
+        
         while (game == 1)
         {
             moves = 0;
