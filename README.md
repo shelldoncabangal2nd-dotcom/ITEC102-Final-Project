@@ -23,9 +23,9 @@ Traditional pen-and-paper Tic-Tac-Toe games require manual grid drawing and cons
 * **Piñana, Alexander Jr. G.** – Member
 
 ## Technologies & Programming Language Used
-* **Language:** C#
-* **Platform / Compiler:** Console Application (.NET / OnlineGDB)
-* **Core Concepts:** Variables & Data Types, `Console.ReadLine()`, `Console.ReadKey()`, `Console.Clear()`, `if-else` Conditionals, `while` Loops
+- **Language:** C#
+- **Platform / Compiler:** Console Application (.NET / OnlineGDB)
+- **Core Concepts:** Variables & Data Types, `Console.ReadLine()`, `Console.ReadKey()`, `Console.Clear()`, `if-else` Conditionals, `while` & `for` Loops, String Manipulation, and Modular Methods
 
 ## System Features
 * **Custom Player Registration:** Supports custom names for Player 1 (`[X]`) and Player 2 (`[O]`), automatically capped at 10 characters to maintain clean ASCII box alignment.
@@ -56,6 +56,15 @@ ITEC102-Final-Project/
 └── documentation/
     └── User-Manual.pdf
 ```
+## Program Screenshots
+
+| 1. Startup Banner | 2. Player Name Registration | 3. Initial Board & Match Metrics |
+| :---: | :---: | :---: |
+| <img src="screenshots/Screenshot1.png" width="230" alt="Startup Banner"> | <img src="screenshots/Screenshot6.png" width="230" alt="Player Name Registration"> | <img src="screenshots/Screenshot2.png" width="230" alt="Initial Board and Match Metrics"> |
+
+| 4. Round Victory Detection | 5. Post-Game Menu | 6. Final Score Summary |
+| :---: | :---: | :---: |
+| <img src="screenshots/Screenshot3.png" width="230" alt="Round Victory Detection"> | <img src="screenshots/Screenshot4.png" width="230" alt="Post-Game Menu"> | <img src="screenshots/Screenshot5.png" width="230" alt="Final Score Summary"> |
 
 ## How to Run the Code 
 1. Open the source file located at `src/Program.cs`.
