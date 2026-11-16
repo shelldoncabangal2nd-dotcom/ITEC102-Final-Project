@@ -24,7 +24,7 @@ Traditional pen-and-paper Tic-Tac-Toe games require manual grid drawing and cons
 
 ## Technologies & Programming Language Used
 - **Language:** C#
-- **Platform / Compiler:** Console Application (.NET / OnlineGDB)
+- **Platform / Compiler:** Console Application (Visual Studio / .NET / OnlineGDB)
 - **Core Concepts:** Variables & Data Types, `Console.ReadLine()`, `Console.ReadKey()`, `Console.Clear()`, `if-else` Conditionals, `while` & `for` Loops, String Manipulation, and Modular Methods
 
 ## System Features
